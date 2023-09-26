@@ -1,0 +1,160 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+#menu{
+	width: 100%;
+	height: 60px;
+	background-color: white;
+	font-family: Arial;
+		font-size: 20px;
+
+}
+#menu ul{
+	list-style: none;
+	position: relative;
+
+}
+#menu ul li{
+	width: 315px;
+	float: left;
+}
+#menu a{
+	padding: 15px;
+	display: block;
+	text-decoration: none;
+	text-align: center;
+	background-color: white;
+	color: gray;
+}
+#menu ul ul{
+	position: absolute;
+	visibility: hidden;
+}
+#menu ul li:hover ul{
+	visibility: visible;
+}
+#menu a:hover{
+	background-color: #f4f4f4;
+	color: #555;
+}
+#menu ul ul li{
+	float: none;
+	border-bottom: solid 1px #ccc;
+}
+#menu ul ul li a{
+	background-color: white;
+}
+label[for="bt_menu"]{
+	padding: 5px;
+	background-color: gray;
+	color: #fff;
+	text-align: center;
+	font-size: 30px;
+	cursor: pointer;
+	height: 50px;
+}
+#bt_menu{
+	display: none;
+}
+label[for="bt_menu"]{
+	display: none;
+}
+
+
+
+@media (max-width: 800px){
+	label[for="bt_menu"]{
+		display: block;
+	}
+	#bt_menu:checked ~ #menu{
+		margin-left: 0;
+		height: auto;
+	}
+	
+	
+	#menu{
+		margin-left: -100%;
+		transition: all 1s;
+		height: 0;
+	}
+	#menu ul li{
+		width: 100%;
+		float: none;
+	}
+	#menu ul ul{
+		position: static;
+		overflow: hidden;
+		max-height: 0;
+		transition: all 4s;
+	}
+	#menu ul li:hover ul{
+		height: auto;
+		max-height: 200px;
+	}
+}
+
+#img{
+	width: 10%;
+	height: 20%;
+	padding-left: 44%;
+}
+	
+.cubos{
+	padding-top:405px;
+	width: 20px;
+	display: inline-block;
+}
+#cuboo{
+	width: 380px;
+	height: 380px;
+	padding-left: 18%;
+}
+
+#cuboos{
+	width: 380px;
+	height: 380px;
+	padding-left: 8%;
+}
+
+#cubo{
+	width: 380px;
+	height: 380px;
+}
+
+#teto{
+	background-color: #FF4500;
+	color: white;
+	width: 100%;
+	font-family: arial;
+	text-align: center;
+	height:21px;
+}
+
+.titulo{
+	width: 80%;
+	height: 70px;
+	background-color: #90EE90;
+	font-family: constantia;
+		font-size: 43px;
+		color: #F08080;
+		font-weight: bold;
+		padding-left: 350px;
+}
+
+.corpo{
+	width: 63%;
+	height: 60px;
+	font-family: constantia;
+		font-size: 30px;
+		color: #2F4F4F;
+		font-weight: bold;
+		padding-left: 350px;
+}
+
+#logo{
+	width: 50px;
+	height: 50px;
+	padding-left: 60px;
+	
+}
